@@ -22,9 +22,8 @@ for (let i = 0; i < arrayOfNumbers.length; i++) {
     /**return arrayOfNumbers.length;*/
   return sum;
 }
-const arrayChallengeOne = [1, 2, 3, 4, 5, 6];
+assignment.sumOfNumbers = sumOfNumbers;
 
-console.log(sumOfNumbers(arrayChallengeOne));
 
 
 /**
@@ -47,9 +46,7 @@ function countEvenNumbers(arrayOfNumbers) {
   return evenNumbers;
 }
 
-const arrayChallengeTwo = [1, 2, 3, 4, 5, 6];
-
-console.log(countEvenNumbers(arrayChallengeTwo));
+assignment.countEvenNumbers = countEvenNumbers;
 
 
 
