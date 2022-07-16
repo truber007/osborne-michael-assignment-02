@@ -14,15 +14,17 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
-}
-const array = [1, 2, 3, 4, 5, 6];
-let sum = 0;
+  let sum = 0;
 
-for (let i = 0; i < array.length; i++) {
-    sum += array[i];
+for (let i = 0; i < arrayOfNumbers.length; i++) {
+    sum += arrayOfNumbers[i];
 }
-console.log(sum);
+    /**return arrayOfNumbers.length;*/
+  return sum;
+}
+const arrayChallengeOne = [1, 2, 3, 4, 5, 6];
+
+console.log(sumOfNumbers(arrayChallengeOne));
 
 
 /**
@@ -35,15 +37,19 @@ console.log(sum);
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  var count = 0;
+  var evenNumbers = 0;
+  for (let i = 0; i < arrayOfNumbers.length; i++){
+    if (arrayOfNumbers[i] % 2 ===0) {
+      evenNumbers++;
+    }
+  }
+  return evenNumbers;
 }
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const even = arr.filter(number => {
-  return number % 2 === 0;
-});
+const arrayChallengeTwo = [1, 2, 3, 4, 5, 6];
 
-console.log(even);
+console.log(countEvenNumbers(arrayChallengeTwo));
 
 
 
